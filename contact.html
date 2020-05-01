@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Favicon-->
+        <link rel="shortcut icon" href="img/logo.png">
+        <!-- Author Meta -->
+        <meta name="author" content="brainicz Technologies">
+        <!-- Meta Description -->
+        <meta name="description" content="lorem">
+        <!-- Meta Keyword -->
+        <meta name="keywords" content="w1, w2, w3">
+            <title>
+                Travel
+            </title>
+            <!-- Stylesheets
+	============================================= -->
+            <!-- Latest compiled and minified CSS -->
+            <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet">
+                <!-- Optional theme -->
+                <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" rel="stylesheet">
+                    <!-- custom main css -->
+                    <link href="css/main.css" rel="stylesheet">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <!--<link rel="stylesheet" href="loader/files/css/normalize.css">
+                    <link rel="stylesheet" href="loader/files/css/main.css">
+                    <script src="loader/files/js/vendor/modernizr-2.6.2.min.js"></script>  -->              
+<style>
+    .zoom {
+    
+    transition: transform .2s;
+    
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+</style>
+    </head>
+    <body>
+    <!--loader
+    <div id="loader-wrapper">
+            <div id="loader"></div>
+
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+
+        </div>
+        loader end-->
+        <header class="other-headers">
+            <div class="overlay">
+            	<nav class="navbar navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" onclick="openNav()" type="button">
+                            <span class="icon-bar">
+                            </span>
+                            <span class="icon-bar">
+                            </span>
+                            <span class="icon-bar">
+                            </span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img class="logo-large" src="img/logo.png" alt="">
+                    </a>
+                    </div>
+                    
+                    <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn visible-xs" onclick="closeNav()">&times;</a>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="rent.html">
+                                    Camping accessories
+                                </a>
+                            </li>
+                            <li>
+                                <a href="guide.html">
+                                    Guide Services
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html">
+                                    Contact Us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            </div>
+
+			<div class="vh-center hidden-xs">
+			<p style="color: #ffffff; text-align: center;"><span class="h1">CONTACT US</span>
+			<br><br>
+			<span class="h5">All Good Things Are Wild & Free
+			</span></p>
+				
+			</div>
+
+        </header>
+
+
+
+        <section id="content">
+        	<div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-center">We'll Get In Touch Within 24 Hours</h1>
+                    </div>
+                </div>  
+                <div class="row tp-35">
+                    <div class="col-md-12">
+                        <form id="contact-form" method="post" action="contact.php" role="form">
+
+                            <div class="messages"></div>
+                        
+                            <div class="controls">
+                        
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_name">Firstname *</label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *"                      required="required" data-error="Firstname is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_lastname">Lastname *</label>
+                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *                     " required="required" data-error="Lastname is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_email">Email *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *"                       required="required" data-error="Valid email is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_need">Please specify your need *</label>
+                                            <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                                <option value=""></option>
+                                                <option value="Request quotation">Request quotation</option>
+                                                <option value="Request order status">Request order status</option>
+                                                <option value="Request copy of an invoice">Request copy of an invoice</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="form_message">Message *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="                      required" data-error="Please, leave us a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button type="submit" class="btn btn-send btn-inverse">Send message</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="text-muted">
+                                            <strong>*</strong> These fields are required.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row tp-35">
+                    <div class="parallax-gc1">
+                        <div class="col-md-4 overlay-con overlay-con1">
+                            <div class="wc-box">
+                                <p><span class="glyphicon glyphicon-earphone"></span> (+94) 81 2 222 222</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 overlay-con overlay-con2">
+                            <div class="wc-box">
+                                <p><span class="glyphicon glyphicon-envelope"></span> abc@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 overlay-con overlay-con3">
+                            <div class="wc-box">
+                                <ul style="list-style: none;" class="list-inline">
+                                    <li><a href="#" class="fa fa-facebook"></a></li>
+                                    <li><a href="#" class="fa fa-instagram"></a></li>
+                                    <li><a href="#" class="fa fa-twitter"></a></li>
+                                    <li><a href="#" class="fa fa-google"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  
+            </div>
+        </section>
+
+
+
+    <footer>
+        <div class="row">
+            <div class="col-md-4">
+                
+            </div>
+            <div class="col-md-4">
+                <h6 class="text-center">Newsletter</h6>
+                <p class="text-center" style="padding-top: 0; padding-bottom: 0;">Stay update with our latest</p>
+                <form>
+                    <div class="input-group">
+                    <input id="email" type="email" class="form-control" name="email" placeholder="Email" style="border-radius: 0;background: #191919; border: none;">
+                    <span class="input-group-addon" style="border-radius: 0; background: #5f27cd; border: none; color: #ffffff;"><span class="glyphicon glyphicon-arrow-right"></span></span>   
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4">
+                
+            </div>
+        </div>
+    </footer>
+
+<!--Scroll To Top btn-->
+<a href="#" class="scrollToTop">▲</a>
+
+
+
+
+        <!-- External JavaScripts
+	============================================= -->
+        <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="https://code.jquery.com/jquery-3.3.1.min.js">
+        </script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script crossorigin="anonymous" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+        </script>
+        <script src="js/main.js">
+        </script>
+        <!--<script src="loader/files/js/main.js"></script> -->
+        <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+    </body>
+</html>
